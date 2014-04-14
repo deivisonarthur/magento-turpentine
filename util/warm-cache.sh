@@ -17,6 +17,11 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
+## Pre requisitos
+## apt-get install libxml-xpath-perl
+## apt-get install siege
+
+
 SITEMAP_URL="$1"
 TMP_URL_FILE="/tmp/urls_$(cat /proc/sys/kernel/random/uuid).txt"
 PROCS="${PROCS-$(grep processor /proc/cpuinfo | wc -l)}"
